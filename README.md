@@ -28,7 +28,7 @@ Ruby,Ruby on Rails
 MySQL
 
 ○ツール
-Git,GitHub,Heroku,Sequel Pro,Tello
+Git,GitHub,Heroku,Sequel Pro,Trello
 
 ・課題や今後実装したい機能
 リスポンシィブWebデザイン
