@@ -1,11 +1,72 @@
-アプリケーション名	ファミリーフォトズ
-アプリケーション概要	家族や子供等の写真を共有出来るアプリケーション
-URL	
-テスト用アカウント	ログイン機能等を実装した場合は、記述しましょう。またBasic認証等を設けている場合は、そのID/Passも記述しましょう。
-利用方法	このアプリケーションの利用方法を説明しましょう。
-目指した課題解決	このアプリケーションを通じて、どのような人の、どのような課題を解決したかったかを書きましょう。
-洗い出した要件	スプレッドシートにまとめた要件定義を、マークダウンで記述しなおしましょう。
-実装した機能についてのGIFと説明	実装した機能について、それぞれどのような特徴があるのか列挙しましょう。GIFを添えることで、イメージがしやすくなります。
-実装予定の機能	洗い出した要件の中から、今後実装予定のものがあれば記述しましょう。
-データベース設計	ER図等を添付しましょう。
-ローカルでの動作方法	git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記述しましょう。この時、アプリケーション開発に使用した環境を併記することを忘れないでください（パッケージやRubyのバージョンなど）。
+・アプリ名：
+FamilyPhotos
+
+・概要：
+家族写真等が、共有できるアプリケーションです。
+
+・本番環境:
+https://family-photos-31747.herokuapp.com/
+
+・制作背景(意図)：
+コロナ禍で離れて住む、不祖母や親戚と写真共有することが出来る。
+
+・DEMO(gif動画)
+app/assets/images/demo.gif
+
+・工夫したポイント:
+1.投稿編集、削除が出来る。
+2.マイページ機能がある。
+
+・使用技術(開発環境)
+○マークアップ言語
+HTML,CSS
+
+○サーバーサイド
+Ruby,Ruby on Rails
+
+○データベース
+MySQL
+
+○ツール
+Git,GitHub,Heroku,Sequel Pro,Tello
+
+・課題や今後実装したい機能
+リスポンシィブWebデザイン
+
+・DB設計
+## users テーブル
+
+| Column     | Type   | Options     |
+| ---------- | ------ | ----------- |
+| nickname   | string | null: false |
+| email      | string | null: false |
+| password   | string | null: false |
+
+### Association
+
+- has_many :tweets
+- has_many :comments
+
+## tweets テーブル
+
+| Column                   | Type       | Options     |
+| ------------------------ | ---------- | ----------- |
+| text                     | string     | null: false |
+| image                    | text       | null: false |
+| user_id                  | references | foreign_key |
+
+- belongs_to :users
+- belongs_to :comments
+
+## comments テーブル
+
+| Column    | Type       | Options     |
+| --------- | ---------- | ----------- |
+| text      | text       | null: false |
+| user_id   | references |             |
+| tweet_id  | references |             |
+
+### Association
+
+- belongs_to :users
+- belongs_to :tweets
