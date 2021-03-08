@@ -33,7 +33,7 @@ Git,GitHub,Heroku,Sequel Pro,Trello
 ## 課題や今後実装したい機能
 リスポンシィブWebデザイン
 
-・DB設計
+# DB設計
 ## users テーブル
 
 | Column     | Type   | Options     |
