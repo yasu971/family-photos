@@ -11,9 +11,9 @@ https://family-photos-31747.herokuapp.com/
 コロナ禍で離れて住む、不祖母や親戚と写真共有することが出来る。
 
 ## DEMO(gif動画)
-app/assets/images/demo.gif
+![デモ画像1](app/assets/images/demo.gif)
 
-/Users/yasuhiro/projects/family-photos/app/assets/images/demo.gif
+![デモ画像2](./app/assets/images/demo.gif)
 
 ## 工夫したポイント:
 1.投稿編集、削除が出来る。
