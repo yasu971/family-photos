@@ -13,6 +13,8 @@ https://family-photos-31747.herokuapp.com/
 ## DEMO(gif動画)
 app/assets/images/demo.gif
 
+/Users/yasuhiro/projects/family-photos/app/assets/images/demo.gif
+
 ## 工夫したポイント:
 1.投稿編集、削除が出来る。
 2.マイページ機能がある。
