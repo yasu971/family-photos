@@ -13,6 +13,7 @@ https://family-photos-31747.herokuapp.com/
 <!-- ## DEMO(gif動画)
 ![デモ画像1](app/assets/images/demo.gif) -->
 
+## DEMO(gif動画)
 ![デモ画像2](./app/assets/images/demo.gif)
 
 ## 工夫したポイント:
